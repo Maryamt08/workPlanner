@@ -5,6 +5,8 @@ var timeDisplay = moment().format('MMMM Do YYYY');
 var timeDiv = $("#currentDay");
 timeDiv.append(timeDisplay);
 
+var saveButton = document.querySelectorAll("button");
+
 var timeList = [
     "9 AM",
     "10 AM",
@@ -33,7 +35,7 @@ for (var i = 0; i < timeList.length; i++) {
     var newRow = $("<div class='row time-block'>").attr("id", idTime[i]);
     var newDiv2 = $("<div class='hour col-1'>")
     var newDiv = $("<textarea class='col-10'>");
-    var newButt = $("<button type='button' class='saveBtn col-1'>");
+    var newButt = $("<button type='button' class='saveBtn col-1 far fa-save'>");
 
     timeBlocks.append(newRow);
 
@@ -72,6 +74,16 @@ $("button").on("click", function(event) {
     var textArea7 = $("textarea")[6].value;
     var textArea8 = $("textarea")[7].value;
     var textArea9 = $("textarea")[8].value;
+
+    localStorage.setItem("textarea1", textArea1);
+    localStorage.setItem("textarea2", textArea2);
+    localStorage.setItem("textarea3", textArea3);
+    localStorage.setItem("textarea4", textArea4);
+    localStorage.setItem("textarea5", textArea5);
+    localStorage.setItem("textarea6", textArea6);
+    localStorage.setItem("textarea7", textArea7);
+    localStorage.setItem("textarea8", textArea8);
+    localStorage.setItem("textarea9", textArea9);
 });
 
 function hourUpdater() {
