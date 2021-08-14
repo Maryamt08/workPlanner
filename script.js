@@ -50,7 +50,7 @@ for (var i = 0; i < timeList.length; i++) {
 }
 
 localStorageFunction();
-
+// retrieves data from local storage
 function localStorageFunction() {
     $("textarea")[0].value = localStorage.getItem("textarea1");
     $("textarea")[1].value = localStorage.getItem("textarea2");
@@ -74,7 +74,8 @@ $("button").on("click", function(event) {
     var textArea7 = $("textarea")[6].value;
     var textArea8 = $("textarea")[7].value;
     var textArea9 = $("textarea")[8].value;
-
+    
+//adds data to local storage
     localStorage.setItem("textarea1", textArea1);
     localStorage.setItem("textarea2", textArea2);
     localStorage.setItem("textarea3", textArea3);
