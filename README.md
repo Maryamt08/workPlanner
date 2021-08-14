@@ -11,6 +11,7 @@ w3schools.com
 stackoverflow.com
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/73563078/129453471-97a1ea99-edad-463d-9585-c369203eb24a.png)
+![screenshot](https://user-images.githubusercontent.com/73563078/129453551-10fb0a5a-1400-4840-a93e-2086c7c56ce7.png)
+
 
 
